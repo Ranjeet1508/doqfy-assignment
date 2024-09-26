@@ -119,7 +119,7 @@ const SignupPage = () => {
     const onSubmit = async (data) => {
         try {
             // Send a POST request to your backend to register the user
-            const response = await axios.post('http://localhost:8080/user/signup', data);
+            const response = await axios.post('https://signp-login-backend.vercel.app/user/signup', data);
 
             // Handle successful signup (the backend should return some kind of confirmation or user object)
             console.log(response.data);

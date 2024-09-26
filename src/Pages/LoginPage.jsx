@@ -122,7 +122,7 @@ const LoginPage = () => {
     const onSubmit = async (data) => {
         try {
             // Send login request to backend
-            const response = await axios.post('http://localhost:8080/user/login', data);
+            const response = await axios.post('https://signp-login-backend.vercel.app/user/login', data);
 
             // Assuming the backend returns a token and user data on successful login
             const { token, isUser } = response.data;
